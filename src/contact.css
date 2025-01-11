@@ -1,0 +1,54 @@
+footer {
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Align at the bottom of the viewport */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* White text color for readability */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding for above and below content */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Adjust other footer styles as needed */
+footer div {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 100px; /* Space between icons */
+    padding-bottom: 50px;
+}
+
+footer img {
+    width: 50px; /* Set a fixed width for icons */
+    height: 50px; /* Set a fixed height for icons */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Scale up icon on hover for effect */
+}
+
+footer p {
+    margin-top: 10px; /* Add margin above the paragraph for spacing */
+    font-size: 20px; /* Increase font size for better readability */
+}
+
+footer img[alt="leaf logo"] {
+    width: 18px; /* Adjust size of the leaf logo */
+    height: 18px;
+    margin: 0px 25px; /* Small margin for spacing from text */
+}
+
+footer p a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f2c9b3; /* Set a color for links */
+    font-weight: bold; /* Make links bold */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Underline on hover for a link effect */
+}
+

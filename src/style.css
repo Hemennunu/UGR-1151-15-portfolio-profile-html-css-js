@@ -1,0 +1,1213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Consistent sizing control */
+}
+/* home css start */
+body {
+    background-image: url("src/image/AboutBackground.svg");
+    background-size: cover;
+    color: #fff;
+    font-family: "Segoe UI", Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; /* Align items at the top */
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+/* Style for menu icon */
+.menu-icon {
+    
+    padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.menu-overlay {
+    z-index: 999; /* Ensure it's above other content */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+.menu-items {
+    text-align: center;
+    color: #e6b49f;
+    font-size: 30px;
+}
+
+.menu-items a {
+    display: block;
+    padding: 15px;
+    color:#f2c9b3;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.menu-overlay.active {
+  display: flex; 
+}
+
+
+
+#main-header {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+}
+
+.logo-nav {
+    align-items: flex-start; /* Align logo to the left */
+    margin: 0; /* Remove margin for snug positioning */
+    justify-items: center;
+}
+
+.logo-nav img {
+    margin-top: 15px;
+    width: 100%;   /* Make the logo responsive */
+    max-width: 161px; /* Limit maximum size */
+}
+
+.navbar {
+    padding: 20px 0; /* Reduced padding for a more compact look */
+    margin-top: 6rem;
+    justify-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Maintain vertical spacing */
+}
+
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; /* Set appropriate font weight */
+    padding: 10px  60px; /* Adjusted for better touch target */
+    border-radius: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    background-color: transparent; /* Ensure a transparent background */
+    text-align: left; /* Align text to the left */
+}
+/* Add styles for active navigation link */
+.nav-item a.active {
+  font-weight: bold; 
+  color: #e6b49f; 
+  text-decoration: underline;
+  border: 1px  solid  #e6b49f; 
+}
+
+
+.nav-item a:hover {
+    
+    color:#f2c9b3; /* Change text color on hover */
+    border: 1px solid #f2c9b3; /* Keep border effect */
+    
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Left align text */
+    padding: 20px;
+    margin-top: 10rem;
+    width: 100%; /* Ensure the main section takes width for alignment */
+}
+
+.intro {
+    margin: 20px 0; /*Add vertical margins for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+}
+
+.intro-title {
+    font-family: "Oswald", sans-serif; 
+    font-size: 90px; 
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-family: "Quattrocento", serif; 
+    font-size: 22px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    max-width: 600px; 
+}
+
+.cv-download {
+    background-color: #f2c9b3;
+    color: #282c34;
+    padding: 20px 180px; 
+    border: none; 
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.cv-download:hover {
+    background-color: #e6b49f;
+    transform: translateY(-2px); 
+}
+/* home css end */
+
+
+/* About section css start */
+.about-section {
+    background-image: url('src/image/AboutBackground.svg');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    width: 100%; /* Ensure the main section takes width for alignment */
+    padding: 40px;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Changed to flex-start for better alignment */
+    
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 4rem; /* Ensures sufficient space for the footer */
+    width: 100%;
+    padding: 40px;
+    text-align: left;
+}
+
+.about-image-wrapper {
+    width: 500px; /* Fixed width for the image */
+    height: 800px;
+    margin-right: 6rem; /* Add space between image and text */
+    overflow: hidden;
+}
+
+.about-image-wrapper img {
+    height: auto;       /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+.about-aside {
+    font-family: "Onest", serif;
+    font-weight: 64px;
+    flex: 1;           /* Allow it to grow to fill the available space */
+    min-width: 505px; /* Set a minimum width to align with the image width */
+    padding: 20px;    /* Add padding for better spacing */
+    margin-bottom: 2rem; /* Additional space for footer */
+}
+
+.aside-title {
+    font-size: 2rem; /* Larger font for title */
+    font-weight: bold; /* Make title bold */
+    margin-bottom: 1rem; /* Space below title */
+    color: inherit; /* Dark color for contrast */
+    font-family: "Playfair Display", serif;
+    font-weight: 90px;
+    font-style:normal;
+}
+
+.about-description, .aside-description {
+    font-size: 1.2rem; /* Larger font for body text */
+    line-height: 1.6; /* Increased line height for better readability */
+    color: inherit; /* Lighter dark color for body text */
+}
+
+
+/* About section css start */
+.about-section {
+    background-image: url('src/image/AboutBackground.svg');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    width: 100%; /* Ensure the main section takes width for alignment */
+    padding: 40px;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Changed to flex-start for better alignment */
+}
+
+.about-image-wrapper {
+    width: 500px; /* Fixed width for the image */
+    height: 800px;
+    margin-right: 6rem; /* Add space between image and text */
+    overflow: hidden;
+}
+
+.about-image-wrapper img {
+    height: auto;       /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+.about-aside {
+    font-family: "Onest", serif;
+    font-weight: 64px;
+    flex: 1;           /* Allow it to grow to fill the available space */
+    min-width: 505px; /* Set a minimum width to align with the image width */
+    padding: 20px;    /* Add padding for better spacing */
+    margin-bottom: 2rem; /* Additional space for footer */
+}
+
+.aside-title {
+    font-size: 2rem; /* Larger font for title */
+    font-weight: bold; /* Make title bold */
+    margin-bottom: 1rem; /* Space below title */
+    color: inherit; /* Dark color for contrast */
+    font-family: "Playfair Display", serif;
+    font-weight: 90px;
+    font-style: normal;
+}
+
+.about-description, .aside-description {
+    font-size: 1.2rem; /* Larger font for body text */
+    line-height: 1.6; /* Increased line height for better readability */
+    color: inherit; /* Lighter dark color for body text */
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .about-section {
+        flex-direction: column; /* Stack sections vertically */
+        margin-top: 5rem; /* Adjust margin */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .about-image-wrapper {
+        width: 80%; /* Reduce image width on smaller screens */
+        height: 500px; /* Adjust image height */
+        margin-right: 0; /* Remove space between image and text */
+        margin-bottom: 2rem; /* Add margin for spacing */
+    }
+
+    .about-aside {
+        min-width: auto; /* Allow the aside to take full width */
+        margin-top: 2rem; /* Add space between image and text */
+    }
+
+    .aside-title {
+        font-size: 1.6rem; /* Adjust title font size */
+    }
+
+    .about-description, .aside-description {
+        font-size: 1rem; /* Adjust body text size */
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .about-section {
+        margin-top: 3rem; /* Adjust margin for very small screens */
+        padding: 10px; /* Reduce padding further */
+    }
+
+    .about-image-wrapper {
+        width: 90%; /* Further reduce image width */
+        height: 400px; /* Adjust image height */
+    }
+
+    .aside-title {
+        font-size: 1.4rem; /* Further reduce title font size */
+    }
+
+    .about-description, .aside-description {
+        font-size: 0.9rem; /* Further reduce body text size */
+    }
+
+    .about-aside {
+        margin-top: 1rem; /* Add some space at the top */
+    }
+}
+
+
+/* Projects Section CSS */
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.intro-text {
+    margin-left: 5%; /* Adjusted for smaller screens */
+}
+
+.content-projects-section {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space between video and text */
+    text-align: left; /* Left align text */
+    padding: 20px;
+    margin-top: 10rem;
+    width: 100%; /* Ensure the main section takes width for alignment */
+    margin-bottom: 4rem; /* Ensure enough space for the footer */
+    
+}
+
+.project-video {
+    width: 100%; /* Make the video responsive */
+    max-width: 600px; /* Limit maximum size */
+    margin-right: 50px; /* Space between the video and text */
+}
+
+.project-text {
+    flex: 2; /* Allow to grow and take available space */
+}
+
+.project-title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.project-description, .project-description2 {
+    font-family: "Onest", serif;
+    font-size: 24px; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    max-width: 600px; /* Constrain text width */
+}
+
+.project-description2 {
+    max-width: max-content;
+    padding: 0px;
+    margin-top: 0px;
+    font-family: "Onest", serif;
+    font-weight: 24px;
+}
+
+.additional-info {
+    margin: 20px; /* Add some space above additional info */
+    flex: 1;
+}
+.visit{
+    color:#f2c9b3;
+    padding: 50px;
+    font-size:"onest",serif;
+    font-weight: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    
+    .content-projects-section {
+        flex-direction: column; /* Stack video and text on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .project-video {
+        margin-right: 0; /* Remove right margin for stacking */
+        margin-bottom: 20px; /* Add space below video */
+    }
+
+    .project-text {
+        text-align: center; /* Center text on smaller screens */
+        flex: none; /* Disable flex-grow */
+        max-width: 90%; /* Limit maximum width */
+    }
+
+    .intro-text {
+        margin-left: 0; /* Reset margin for intro-text */
+        font-family: "Merriweather", serif;
+        font-weight: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .project-title {
+        font-size: 24px; /* Adjust font size for smaller devices */
+    }
+
+    .project-description, .project-description2 {
+        font-size: 18px; /* Adjust description font size */
+    }
+
+    .additional-info {
+        text-align: center; /* Center additional info text */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .project-title {
+        font-size: 20px; /* Further reduce title font size */
+    }
+
+    .project-description, .project-description2 {
+        font-size: 16px; /* Further reduce description font size */
+    }
+}
+
+/* menu start */
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+}
+/* menu end */
+
+/* Hobby CSS Start */
+.hobby-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: center; /* Center items vertically */
+    gap: 10rem; /* Unified gap between items */
+}
+
+ .reverse {
+    flex-direction: row-reverse; /* Reverse the direction for this container */
+}
+
+.hobby-image {
+    width: 100%; /* Change to 100% to make it flexible */
+    max-width: 500px; /* Ensure it doesn't exceed the desired max width */
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Hide any overflow content */
+    border-radius: 3rem; /* Rounded corners */
+}
+
+.hobby-image img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 100%; /* Full height to prevent distortion */
+    object-fit: cover; /* Cover while maintaining aspect ratio */
+    margin: 0; /* Reset margin for the image */
+}
+
+/* Ensure description gets proper space */
+.hobby-description {
+    flex: 1; /* Allows text to take the remaining space */
+    font-family: "Onest", serif;
+    font-weight: 64px;
+}
+
+/* Responsive Title and Description */
+.hobbies-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Onest", serif;
+    font-weight: 36px;
+}
+
+.hobbies-description {
+    font-size: 16px;
+}
+.hobbies-section{
+    margin-top: 250px;
+    padding-bottom: 200px;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .hobbies-section{
+        margin-top: 150px;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .hobby-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to start */
+        gap: 20px;
+    }
+    
+
+    .hobby-image {
+        width: 100%; /* Use full width */
+        height: auto; /* Auto height to maintain aspect ratio */
+        max-width: none; /* Remove max-width to use available space */
+    }
+
+    .hobby-description {
+        width: 100%; /* Full width for the description */
+    }
+
+    .hobbies-title {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .hobbies-description {
+        font-size: 14px; /* Adjust description font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .hobbies-title {
+        font-size: 18px; /* Further reduce title font size */
+    }
+
+    .hobbies-description {
+        font-size: 14px; /* Adjust description for small devices */
+    }
+}
+
+/* Hobby CSS End */
+
+
+
+/*Contact section css start*/
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    width: 80%; /* Set a width for the contact section */
+    max-width: 800px; /* Optional: limit the maximum width */
+    height: 600px;
+     /* Optional: add some padding */
+    background-color: inherit; /* Optional: add background color */
+    border: 1px solid #000; /* Optional: add a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+    margin: 12.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 200px;
+}
+
+.create-blog form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    max-width: 100%; /* Take full width of parent */
+    margin-top: 0px;
+}
+.create-blog{
+    /* max-width: 1000px; */
+    width: 100%;
+    margin-top: 0px;
+}
+.contact-title{
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    margin-top: 0px;
+    
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+}
+.name-email {
+    display: flex; /* Flexbox for name and email inputs */
+    gap: 10px; /* Space between inputs */
+}
+
+input[type="text"], textarea {
+    margin-bottom: 30px; /* Space between inputs */
+    padding: 20px; /* Padding inside inputs */
+    border: 1px  solid #e6b49f; /* Border for inputs */
+    width:100%;
+    margin-top: 0px;
+    background-color:inherit;
+    color:#e6b49f;
+}
+
+button {
+    padding: 15px; /* Padding inside button */
+    background-color: #f2c9b3; /* Button color */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+}
+
+button:hover {
+    background-color: #f2c9b3; /* Darker on hover */
+}
+
+/* Contact section css end */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .contact-section {
+        height: auto; /* Let the section grow depending on content */
+        margin: 5rem; /* Adjust margin for smaller screens */
+        padding-top: 100px; /* Adjust top padding */
+    }
+
+    .contact-title {
+        font-size: 48px; /* Reduce title font size */
+    }
+
+    .name-email {
+        flex-direction: column; /* Stack name and email inputs vertically */
+        gap: 20px; /* Increase space between inputs */
+    }
+
+    input[type="text"], textarea {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        padding: 12px; /* Reduce button padding */
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    .contact-section {
+        margin: 2rem; /* Reduce margin on very small screens */
+    }
+
+    .contact-title {
+        font-size: 32px; /* Further reduce title font size */
+        text-align: center; /* Center align the title */
+    }
+
+    .create-blog form {
+        padding: 0 20px; /* Add padding to form for better spacing */
+    }
+
+    input[type="text"], textarea {
+        padding: 12px; /* Smaller padding for input fields */
+    }
+
+    button {
+        padding: 10px; /* Adjust button padding */
+    }
+}
+
+/* footer css start */
+
+footer {
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Align at the bottom of the viewport */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* White text color for readability */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding for above and below content */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Adjust other footer styles as needed */
+footer div {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 30px; /* Space between icons */
+}
+
+footer img {
+    width: 30px; /* Set a fixed width for icons */
+    height: 30px; /* Set a fixed height for icons */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Scale up icon on hover for effect */
+}
+
+footer p {
+    margin-top: 10px; /* Add margin above the paragraph for spacing */
+    font-size: 20px; /* Increase font size for better readability */
+}
+
+footer img[alt="leaf logo"] {
+    width: 18px; /* Adjust size of the leaf logo */
+    height: 18px;
+    margin: 0px 25px; /* Small margin for spacing from text */
+}
+
+footer p a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f2c9b3; /* Set a color for links */
+    font-weight: bold; /* Make links bold */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Underline on hover for a link effect */
+}
+
+/* media query */
+
+@media (max-width: 575px) {
+    /* Styles for phone portrait */
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    body {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .intro-title {
+        font-size: 50px; /* Smaller title size */
+    }
+
+    .cv-download {
+        padding: 10px 40px; /* Smaller padding */
+        font-size: 14px;
+    }
+
+    .about-section {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Left-align text */
+        font-size: 70px;
+    }
+
+    .about-aside {
+        padding: 15px; /* Add some padding */
+        text-align: center;
+    
+
+    
+  .aside-title {
+    font-size: 1.2rem;
+  }
+
+  .about-description,
+  .aside-description,
+  .about-image-wrapper {
+    font-size: 0.2em;
+    max-width: 80%;
+    padding: auto 20px;
+  }
+  .about-content{
+    max-width: 100%;
+  }
+
+  
+
+    footer {
+        font-size: 14px; /* Smaller footer text */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 575px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 5px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+    /* About Section */
+    .about {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #2c2c54; /* Dark Purple */
+    }
+
+    .about p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .about .button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2c2c54;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .about .button:hover {
+        background-color: #1a1a2e;
+    }
+
+    /* Contact Section */
+    .contact {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #2c2c54; /* Dark Purple */
+    }
+
+    .contact p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .contact .button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2c2c54;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .contact .button:hover {
+        background-color: #1a1a2e;
+    }
+}
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on mobile/tablet */
+    }
+
+    .section {
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .logo-nav img{
+      padding: 10px;
+    background-color:inherit;
+    
+    position: fixed;
+    top: 20px;
+    left: 20px; 
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 8px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+    .about, .contact {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about h2, .contact h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .about p, .contact p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .about .button, .contact .button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2c2c54;
+        color: white;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    .about .button:hover, .contact .button:hover {
+        background-color: #1a1a2e;
+    }
+
+}
+     
