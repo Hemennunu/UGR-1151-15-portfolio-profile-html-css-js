@@ -5,7 +5,7 @@
 }
 /* home css start */
 body {
-    background-image: url("image/AboutBackground.svg");
+    background-image: url("src/image/AboutBackground.svg");
     background-size: cover;
     color: #fff;
     font-family: "Segoe UI", Geneva, Verdana, sans-serif;
