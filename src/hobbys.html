@@ -4,93 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies - Nuhamin Arega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="main-header">
-      <a href="portfolio.html" class="logo">
-        <h1>Nuhamin</h1>
-      </a>
+     <!-- Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="src/icons/menu.svg" alt="this is menu icon">
+    </div>
 
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="hobbys.html">Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Overlay Menu -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-items">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./hobbys.html">Hobbies</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <header id="main-header">
+      <div class="logo-nav">
+        <img src="src/image/logo.svg" alt="this is logo" />
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="home.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="hobbys.html">Hobbies</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <!-- Hobbies Section -->
       <section class="hobbies-section">
-        <div class="hobbies-intro">
-          <h2 class="hobbies-title">Hobbies</h2>
-          <p class="hobbies-description">
-            In my downtime, I dive into a mix of hobbies that keep my creative
-            juices flowing and my mind engaged. First off, I love to draw. It’s
-            my way of expressing thoughts and ideas that are sometimes hard to
-            put into words. Each stroke of the pencil helps me explore my
-            imagination. Cooking is another passion of mine; I whip up fancy
-            meals for my siblings. There’s something incredibly rewarding about
-            bringing people together over good food, and I enjoy experimenting
-            with flavors to create dishes that surprise and delight. When I need
-            to recharge, I turn to my bookshelf. Reading is my escape, allowing
-            me to explore new worlds and ideas. It’s a chance to learn and
-            unwind, diving into stories that spark my curiosity. And of course,
-            spending quality time with my siblings is a must—nothing beats the
-            laughter and memories we create together. Each of these hobbies adds
-            a unique flavor to my life, making every day an adventure. Whether
-            I'm sketching, cooking, reading, or just pondering life, each hobby
-            adds a unique layer to who I am.
-          </p>
+        <div class="hobby-container">
+          <div class="hobby-description">
+            <h2 class="hobbies-title">Cooking</h2>
+            <p class="hobbies-description">
+              Cooking is another passion of mine; I whip up fancy meals for my
+              siblings.
+            </p>
+          </div>
+          <div class="hobby-image">
+            <img src="src/image/cook3.jpg" alt="Cooking" />
+          </div>
+          
         </div>
 
-        <div class="hobbies-images">
-          <div class="hobby-image">
-            <img src="images/Drawing-hobby.jpg" alt="Drawing Hobby" />
+        <div class="hobby-container reverse">
+          <div class="hobby-description">
+            <h2 class="hobbies-title">Drawing</h2>
+            <p class="hobbies-description">
+              I love to draw. It’s my way of expressing thoughts and ideas that
+              are sometimes hard to put into words.
+            </p>
           </div>
-
           <div class="hobby-image">
-            <img src="images/cook3.jpg" alt="Cooking" />
+            <img src="src/image/Drawing-hobby.jpg" alt="Drawing" />
           </div>
+        </div>
 
+        <div class="hobby-container">
+          <div class="hobby-description">
+            <h2 class="hobbies-title">Reading</h2>
+            <p class="hobbies-description">
+              In my downtime, I dive into a mix of hobbies that keep my creative
+              juices flowing and my mind engaged.
+            </p>
+          </div>
           <div class="hobby-image">
-            <img src="images/reading2.jpg" alt="Reading" />
+            <img src="src/image/reading2.jpg" alt="Reading" />
           </div>
+          
+        </div>
 
+        <div class="hobby-container reverse">
+          <div class="hobby-description">
+            <h2 class="hobbies-title">Spending Time with My Siblings</h2>
+            <p class="hobbies-description">
+              Spending quality time with my siblings is a must—nothing beats the
+              laughter.
+            </p>
+          </div>
           <div class="hobby-image">
             <img
-              src="images/spending-time-with-my-siblings.jpg"
+              src="src/image/spending-time-with-my-siblings.jpg"
               alt="Spending Time with Siblings"
             />
           </div>
         </div>
       </section>
-      <!-- /Hobbies Section -->
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div>
-          <p>
-            © <span>Copyright</span>
-            <strong>Nuhamin's portfolio</strong>
-            <span>All Rights Reserved</span>
-          </p>
-        </div>
+      <div>
+        <a href="https://www.linkedin.com/in/nuhamin-arega-122871339/" target="_blank">
+          <img src="src/icons/linkdin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://t.me/Bequit" target="_blank">
+          <img src="src/icons/telegram.svg" alt="Telegram icon" />
+        </a>
+        <a href="https://github.com/Hemennunu" target="_blank">
+          <img src="src/icons/github.svg" alt="GitHub icon" />
+        </a>
       </div>
+      <p>
+        Nuhamin Arega <img src="src/icons/leaf.svg" alt="leaf logo" />&copy;
+        2024
+      </p>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuOverlay = document.querySelector('.menu-overlay');
+
+        menuIcon.addEventListener('click', () => {
+            menuOverlay.classList.toggle('active');
+        });
+        
+        // Optional: Close menu when clicking outside
+        menuOverlay.addEventListener('click', (event) => {
+            if (event.target === menuOverlay) {
+                menuOverlay.classList.remove('active');
+            }
+        });
+    });
+</script>
   </body>
 </html>
