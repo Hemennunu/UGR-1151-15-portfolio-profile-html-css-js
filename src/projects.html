@@ -4,67 +4,133 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>projects - Nuhamin-Arega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="main-header">
-      <a href="portfolio.html">
-        <h1 class="logo">Nuhamin</h1>
-      </a>
+     <!-- Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="src/icons/menu.svg" alt="this is menu icon">
+    </div>
 
+    <!-- Overlay Menu -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-items">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./hobbys.html">Hobbies</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <header id="main-header">
+      <div class="logo-nav">
+        <img
+          src="src/image/logo.svg"
+          width="161px"
+          height="50px"
+          alt="this is logo"
+        />
+      </div>
       <nav class="navbar">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="hobbys.html">Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html">Contact</a>
-          </li>
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="hobbys.html">Hobbies</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <div class="project">
+      <div class="content-projects-section">
+        <video
+          class="project-video"
+          src="src/image/Screen Recording 2024-12-11 182936.mp4"
+          controls
+        ></video>
+        <div class="project-text">
+          <h1 class="project-title">THE GYM PROJECT ADVENTURE</h1>
+          <p class="project-description">
+            One summer, my friend and I decided to dive headfirst into a project
+            and create a website for a gym. Sounds simple, right? Well, it
+            turned into a wild ride! What we thought would be a straightforward
+            learning experience quickly turned into a real challenge—both
+            technically and personally. The guy we were working for? Let's just
+            say he was a bit of a character.
+          </p>
+        </div>
+      </div>
 
-    <div class="content">
-      <h1 class="projects-title">Projects</h1>
-      <p class="intro-text">
-        Each challenge you overcome builds your confidence and prepares you for
-        the next adventure. Remember, every setback is just a setup for a
-        comeback!
-      </p>
-
-      <video
-        class="project-video"
-        src="images/adventure%20vedieo.mp4"
-        controls
-      ></video>
-      <h1 class="project-title">THE GYM PROJECT ADVENTURE</h1>
-      <p class="project-description">
-        One summer, my friend and I decided to dive headfirst into a project and
-        create a website for a gym. Sounds simple, right? Well, it turned into a
-        wild ride! What we thought would be a straightforward learning
-        experience quickly turned into a real challenge—both technically and
-        personally. The guy we were working for? Let's just say he was a bit of
-        a character. Super talkative and a little too hands-on, he barely gave
-        us a moment to breathe, let alone talk about our ideas. It felt like we
-        were caught in a whirlwind of his endless chatter, trying to get a word
-        in edgewise while also keeping the project on track. When we wrapped up
-        the front end, we thought we were in the clear. But then we hit a snag
-        with the backend—it was looking pretty grim at first. We were both ready
-        to throw in the towel, but something pushed us to keep going. After some
-        late nights, lots of coffee, and a few intense brainstorming sessions,
-        we managed to turn it around. In the end, we not only built a functional
-        website but also learned a ton about teamwork, perseverance, and how to
-        deal with tricky clients. It was a summer of growth, frustration, and
-        triumph, and I wouldn't trade that experience for anything!
-      </p>
+      <div class="additional-info">
+        <p class="project-description2">
+          When we wrapped up the front end, we thought we were in the clear. But
+          then we hit a snag with the backend—it was looking pretty grim at
+          first. We were both ready to throw in the towel, but something pushed
+          us to keep going. After some late nights, lots of coffee, and a few
+          intense brainstorming sessions, we managed to turn it around. In the
+          end, we not only built a functional website but also learned a ton
+          about teamwork, perseverance, and how to deal with tricky clients. It
+          was a summer of growth, frustration, and triumph, and I wouldn't trade
+          that experience for anything!
+        </p>
+        <p class="intro-text">
+          "Each challenge you overcome builds your confidence and prepares you
+          for the next adventure. Remember, every setback is just a setup for a
+          comeback!"
+        </p>
+<div >
+    <a class="visit" href="http://dinosaurgym.infinityfreeapp.com/" >Visit my work</a>
+</div>
+        
+      </div>
     </div>
+
+    <!-- Footer section -->
+    <footer>
+      <div>
+        <a href="https://www.linkedin.com/in/nuhamin-arega-122871339/" target="_blank">
+          <img src="src/icons/linkdin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://telegram.org/" target="_blank">
+          <img src="src/icons/telegram.svg" alt="Telegram icon" />
+        </a>
+        <a href="https://t.me/Bequit" target="_blank">
+          <img src="src/icons/github.svg" alt="GitHub icon" />
+        </a>
+      </div>
+      <p>
+        Nuhamin Arega <img src="src/icons/leaf.svg" alt="leaf logo" />&copy;
+        2024
+      </p>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuOverlay = document.querySelector('.menu-overlay');
+
+        menuIcon.addEventListener('click', () => {
+            menuOverlay.classList.toggle('active');
+        });
+        
+        // Optional: Close menu when clicking outside
+        menuOverlay.addEventListener('click', (event) => {
+            if (event.target === menuOverlay) {
+                menuOverlay.classList.remove('active');
+            }
+        });
+    });
+</script>
   </body>
 </html>
